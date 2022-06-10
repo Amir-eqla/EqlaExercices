@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 2 : Salutation personnalisée</h2>
+
+    <p>
+        Créez une fonction qui va ouvrir une boite de dialogue et dire bonjour à quelqu'un. Elle a un paramètre, le nom de la personne que le programme salue.
+    </p>
+    <p>
+        Essayez d'appeler la fonction de 4 manières différentes
+    </p>
+    
+    <p><a href="../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+// function SayHello()
+// {
+//     let name = prompt("Quel est ton nom ?");
+//     alert("hello "+name);
+// }
+// SayHello();
+
+function SayHello(_name)
+{
+    alert("hello "+_name);
+}
+SayHello("Amir");
+SayHello("Phillip");
+
+let name = "Bruno";
+SayHello(name);
+
+SayHello(prompt("Quel est ton nom ?"));
+
+let username = prompt("Quel est ton nom d'utilisateur ?");
+SayHello(username);
+
+
+</script>
+</html>

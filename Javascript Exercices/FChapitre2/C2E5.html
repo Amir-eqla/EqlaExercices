@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 5 : Fonction combinée d'anniversaire</h2>
+    <p>
+        Créez d'abord 2 fonctions. Une qui va écrire l'âge, et une qui va écrire la date de naissance
+        (avec une petite phrase qui accompagne du style "Vous avez X ans")
+        de la personne qui appelle la fonction. La première fonction prend en paramètre l'âge, la deuxième prend
+        en paramètre la date de naissance en chaîne de caractère.
+    </p>
+    <p>
+        Appelez ces deux fonctions pour que cela affiche d'abord l'âge puis la date de naissance de la personne
+    </p>
+    <p>
+        Maintenant le réel exercice Au seul appel d'une fonction (vous pouvez en recréer si vous voulez), l'âge 
+        Et la date de naissance de la personne seront affichés. Il y a trois solutions possibles, essayez de les
+        trouver !
+    </p>
+
+
+    
+    <p><a href="../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+function SayAge(_age)
+{
+    alert("tu as "+_age+" ans");
+}
+function SayDate(_date)
+{
+    alert("tu es né le "+_date);
+}
+function DeuxEnUn(_age,_date)
+{
+    SayAge(_age);
+    SayDate(_date);
+}
+let age = 25;
+let date = "25/11/1996";
+DeuxEnUn(age,date);
+
+
+</script>
+</html>

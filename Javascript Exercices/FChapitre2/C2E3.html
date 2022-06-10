@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 3 : La Carte d'identité</h2>
+
+    <p>
+        Créez une fonction IDCard. Elle prend 3 variables en paramètre. Elles représentent dans l'ordre :
+    </p>
+        <ul>
+            <li>Le nom</li>
+            <li>l'age</li>
+            <li>le sexe</li>
+        </ul>
+    <p>
+        de la personne qui va appeler la fonction.
+    </p>
+    <p>
+        Lorsque la fonction est appelée, une boite de dialogue s'ouvre, dedans une phrase décrit la personne.
+    </p>
+    <p>
+        Par exemple : "Vous êtes Mr. X et vous avez XXans"
+    </p>
+
+    
+    <p><a href="../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+// function SayMyLife(_name,_age,_sex)
+// {
+//     alert("Bonjour "+_name+", tu as "+_age+" ans et tu es un "+_sex)
+// }
+// let name = prompt("Quel est ton nom ?");
+// SayMyLife(name);
+// let age = prompt("Quel age as-tu ?");
+// SayMyLife(age);
+// let sex = prompt("Quel age as-tu ?");
+// SayMyLife(sex);
+
+function IDCard(_name,_age,_sex)
+{
+    alert("Bonjour "+_name+" tu as "+_age+" ans et tu es un(e) "+_sex);
+}
+// IDCard("Amir","23","homme");
+let name = prompt("Quel est ton nom ?");
+let age = prompt("Quel age as-tu ?");
+let sex = prompt("Quel est ton sex ?");
+IDCard(name,age,sex);
+
+</script>
+</html>

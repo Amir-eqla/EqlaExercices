@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 4 : Horaire de train</h2>
+    <p>
+        Vous créez une petie application qui donne les horaires des trains. L'utilisateur choisira sa destination 
+        et la période à laquelle il veut partir et votre application donnera l'heure du train. Concrètement le 
+        résultat devra ressembler à ceci :
+    </p>
+    
+    <p>1 - Bruxelles
+    <br>2 - Mons
+    <br>3 - Nivelles
+    <br>4 - Charleroi
+    </p>
+
+    <p>Entrez La destination que vous voulez atteindre : 3
+    <br> Bien, vous avez choisi d'aller à Nivelles.</p>
+
+    <p>1 - Matin
+    <br>2 - Après-midi
+    <br>3 - Soir</p>
+
+    <p>Quand souhaitez vous partir ? 3</p>
+    <p>Ok, vous avez choisi la période : Soir</p>
+    <p>Votre train démarre à 20h00</p>
+    
+    <p>Les heures sont les suivantes :</p>
+    
+    <p>
+        <ul>
+            <li>Mons (Matin) : 9h10</li> 
+            <li>Mons (Midi) : 13h30</li> 
+            <li>Mons (Soir) : 22h56</li> 
+        </ul>
+        <ul>
+            <li>Bruxelles (Matin) : 10h33</li> 
+            <li>Bruxelles (Midi) : 14h42</li> 
+            <li>Bruxelles (Soir) : 19h02</li> 
+        </ul>
+        <ul>
+            <li>Nivelles (Matin) : 5h34</li> 
+            <li>Nivelles (Midi) : 15h13</li> 
+            <li>Nivelles (Soir) : 20h00</li> 
+        </ul>
+        <ul>
+            <li>Charleroi (Matin) : 7h45</li> 
+            <li>Charleroi (Midi) : 12h53</li> 
+            <li>Charleroi  (Soir) : 23h02</li> 
+        </ul>
+    </p>
+
+
+    
+    
+    <p><a href="../Chapitre3.html">Retour au Chapitre 3</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+let destination = prompt("Quel est votre destination ?\nTapez 1 pour Bruxelles\nTapez 2 pour Mons\nTapez 3 pour Nivelles\nTapez 4 pour Charleroi")
+let periode = prompt("A quel moment voulez vous partir ?\nTapez 1 pour le matin\nTapez 2 pour la mi-journée\nTapez 3 pour le soir")
+
+if(destination==1 && periode==1)
+{
+    alert("Votre train en destination de Bruxelles partira à 10h33")
+}
+else if(destination==1 && periode==2)
+{
+    alert("Votre train en direction de Bruxelles partira à 14h42")
+}
+else if(destination==1 && periode==3)
+{
+    alert("Votre train en direction de Bruxelles partira à 19h02")
+}
+else if(destination==2 && periode==1)
+{
+    alert("Votre train en direction de Mons partira à 9h10")
+}
+else if(destination==2 && periode==2)
+{
+    alert("Votre train en direction de Mons partira à 13H30")
+}
+else if(destination==2 && periode==3)
+{
+    alert("Votre train en direction de Mons partira à 22h56")
+}
+else if(destination==3 && periode==1)
+{
+    alert("Votre train en direction de Nivelles partira à 5h34")
+}
+else if(destination==3 && periode==2)
+{
+    alert("Votre train en direction de Nivelles partira à 15h13")
+}
+else if(destination==3 && periode==3)
+{
+    alert("Votre train en direction de Nivelles partira à 20h")
+}
+else if(destination==4 && periode==1)
+{
+    alert("Votre train en direction de Charleroi partira à 7h45")
+}
+else if(destination==4 && periode==2)
+{
+    alert("Votre train en direction de Charleroi partira à 12H53")
+}
+else if(destination==4 && periode==3)
+{
+    alert("Votre train en direction de Charleroi partira à 23H02")
+}
+else
+{
+    alert("Tu a commis une erreur pauvre de toi")
+}
+
+
+
+</script>
+</html>

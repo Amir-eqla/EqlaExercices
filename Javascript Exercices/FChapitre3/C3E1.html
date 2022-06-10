@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 1 : Vérification des heures</h2>
+    <p>
+        Votre programme demandera la partie "heure" de l'heure à l'utilisateur et stockera la réponse dans une variable
+        Ensuite, il demandera la partie "minute" de l'heure à l'utilisateur et stockera cette deuxième information dans une autre variable.
+        Après recolte de ces informations, le programme écrira l'heure et les minutes que l'utilisateur a défini. Si l'heure n'est pas correctement encodée 
+        (minutes supérieur à 59, heures supérieures à 24,...) alors le programme affichera plusieurs messages d'erreur du style "L'heure encodée est supérieur à 60" 
+        pour faire comprendre les problèmes.
+    </p>
+    <p>
+        Après ceci, quoi qu'il arrive, le programme souhaitera une bonne journée à l'utilisateur.
+    </p>
+    
+    <p><a href="../Chapitre3.html">Retour au Chapitre 3</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+let heure = parseInt(prompt("Entrez l'heure à l'instant sans entrer les minutes"));
+let minute = parseInt(prompt("Entrez l'heure précise en minute sans préciser l'heure"))
+// if(heure>23)
+// {
+//     alert("Il n'y a pas plus de 24h par jour !")
+// }
+// if(minute>59)
+// {
+//     alert("Il n'y a pas plus de 59 minutes en une heure !")
+// }
+// else
+// {
+//    ShowResult(heure,minute)
+// }
+function ShowResult(_heure,_minute)
+{
+    alert(_heure+" : "+_minute)
+}
+
+if (heure<24&&minute<60&&heure>=0&&minute>=0)
+{ShowResult(heure,minute)}
+else
+{
+    alert("Il n'y ni plus de 24 en un jour ni plus de 60 minutes en une heure")
+}
+
+
+
+</script>
+</html>

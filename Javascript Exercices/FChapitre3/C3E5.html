@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 5 : Détecteur de langue</h2>
+    <p>
+        Votre programme posera la question suivante à l'utilisateur "Dites moi bonjour dans votre langue et je vous dirai quelle langue vous parlez :"    
+    </p>
+    <p>
+        Préparez le cas de 4 ou 5 langues différentes (Hello, Bonjour, Goeiedag, Hallo,...), votre programme dira alors "vous parlez langueCorrespondante"
+    </p>
+    <p>
+        Le programme doit faire maximum le nombre de langue + 2 en nombre de ligne. Si il y a 4 choix de langues votre programme doit faire maximum 6 lignes, etc.
+    </p>
+    
+    <p><a href="../Chapitre3.html">Retour au Chapitre 3</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+let hilang = prompt("Dite bonjour dans une langue")
+
+switch(hilang)
+{
+    case "hello"&&"hi" : alert("Vous parlez anglais")
+    break ;
+    case "bonjour"&&"salut" : alert("Vous parlez français")
+    break ;
+    case "bonjourno" : alert("Vous parlez italien")
+    break ;
+    case "hallo" : alert("Vous parlez néerlandais")
+    break ;
+    default : alert("Essayer une autre langue")
+}
+
+</script>
+</html>

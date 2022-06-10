@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 8 : Conversion et TVA</h2>
+    <p>
+        La seule opération se faisant hors des fonction est l'appel de ShowResult(). Cette fonction
+        s'occupera exclusivement d'écrire à l'écran le résultat demandé.
+    </p>
+    <p>
+        Votre programme devra comme résultat afficher le prix entré par l'utilisateur sans taxe en euro, 
+        tugrik(monnaie mongole), et dollars.
+    </p>
+    <p>
+        Il devra aussi calculer et montrer le prix avec taxe dans les trois monnaie, et enfin le prix final après
+        application de la réduction (c'est une réduction brute pas en %. Si l'utilisateur rentre une réduction 
+        de 10 alors ça veut dire qu'on enlève 10 euros au prix final) 
+    </p>
+    <p>
+        <ul>
+            <li>
+                Conversion : 
+                <ul>
+                    <li>USA : 1,19</li>
+                    <li>MN : 3395</li>
+                </ul>
+            </li>
+            <li>
+                TVA :
+                <ul>
+                    <li>USA : 7,5%</li>
+                    <li>EU : 21%</li>
+                    <li>MN : 10%</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <p><a href="../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+let prixeuro = parseInt(prompt("Quel est le prix du produit ?"));
+let dollars = 1.19
+let tugrik =  3395
+let tvaeu = 0.21
+let tvausa = 0.075
+let tvamong = 0.1
+let prixdollars = prixeuro*dollars
+let prixtugrik = prixeuro*tugrik
+alert("Le prix sans taxs en euro est "+prixeuro+" euros\nLe prix sans taxs en dollars est "+prixdollars+" dollars\nLe prix sans taxs en tugrik est "+prixtugrik+" tugriks")
+
+function TvaMaker(_number1,_number2)
+{
+    let taxeu = _number1+_number1*_number2
+    return taxeu
+}
+taxeu = TvaMaker(prixeuro,tvaeu)
+taxusa = TvaMaker(prixdollars,tvausa)
+taxmong = TvaMaker(prixtugrik,tvamong)
+
+alert("Le prix avec TVA en Europe est "+taxeu+" euros\nLe prix avec TVA aux Etats-Unis est "+taxusa+" dollars\nLe prix avec Tva en Mongolie est "+taxmong+" tugriks")
+
+let reduction = parseInt(prompt("Quel est votre réduction ?"));
+
+function ConvDeRedu(_number1,_number2)
+{
+    let redudol = _number1*_number2
+    return redudol
+}
+redudol = ConvDeRedu(reduction,dollars)
+redutug = ConvDeRedu(reduction,tugrik)
+
+function ShowResult(_taxeu,_reduction,_taxusa,_redudol,_taxmong,_redutug)
+{
+    alert("Le prix avec TVA après la réduction en Europe est "+(_taxeu-_reduction)+" euros\nLe prix avec TVA après la réduction aux Etats-Unis est "+(_taxusa-_redudol)+" dollars\nLe prix avec Tva après réduction en Mongolie est "+(_taxmong-_redutug)+" tugriks")
+}
+ShowResult(taxeu,reduction,taxusa,redudol,taxmong,redutug)
+
+// let prixeuroredui = prixeuro-reduction
+// let prixdollarsredui = prixeuroredui*dollars
+// let prixtugrikredui = prixeuroredui*tugrik
+
+// taxeuredui = TvaMaker(prixeuroredui,tvaeu)
+// taxusaredui = TvaMaker(prixdollarsredui,tvausa)
+// taxmongredui = TvaMaker(prixtugrikredui,tvamong)
+// alert("Le prix avec TVA après la réduction en Europe est "+taxeuredui+" euros\nLe prix avec TVA après la réduction aux Etats-Unis est "+taxusaredui+" dollars\nLe prix avec Tva en Mongolie est "+taxmongredui+" tugriks")
+
+
+
+</script>
+</html>

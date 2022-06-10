@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 3 : Séléction de sexe</h2>
+    <p>
+        Votre programme demande à l'utilisateur d'entrer un chiffre, ce chiffre représentera le sexe la personne (1:femme 2:homme 3:autre)
+    </p>
+    <p>
+        En fonction de l'entrée donnée, le programme donnera un résultat différent, le programme saluera la personne en prenant en compte son sexe, 
+        (Boujour Madame/Boujour Monsieur/Bonjour à vous)
+    </p>
+    
+    <p><a href="../Chapitre3.html">Retour au Chapitre 3</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+    function Boucle()
+{
+    let _sex = parseInt(prompt("Si vous êtes une femme tapez 1\nSi vous êtes un homme tapez 2\nSi vous êtes autre chose tapez 3"))
+
+if(_sex == 1)
+{
+    alert("Bonjour Madame")
+}
+else if(_sex ==2)
+{
+    alert("Bonjour monsieur")
+}
+else if(_sex==3)
+{
+    alert("Bonjour à vous")
+}
+else
+{
+    Boucle()
+}
+}
+
+Boucle()
+
+
+</script>
+</html>

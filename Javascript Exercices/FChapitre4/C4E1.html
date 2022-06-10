@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 4 - Exercice 1 : La boucle while</h2>
+    <p>
+        On peut voir le "while" comme un "if". Sauf qu'à la différence du if, le code se trouvant dans un while
+        est executé en boucle le temps que l'expression booléenne passe à false. On a donc un code comme ceci
+    </p>
+    <p>
+        while (condition){
+        <br>CodeSExecutantEnBoucle()
+        <br>}
+    </p>
+    <p>
+        Voilà pour la théorie, en sachant ça, essayez d'écrire un bout de code qui va écrire 5 fois Hello World.
+        Ensuite, posez vous la question de comment vous devriez modifier ce code si vous vouliez écrire 5000 fois Hello World
+        Si vous avez réussi, une seule ligne devrait être à modifier !
+    </p>
+    <p>
+        Le problème de ce code, c'est qu'il n'y a rien qui permet de modifier la condition pour avoir la possibilité
+        une fois qu'elle passe à false, ce qui fait donc une boucle infinie. Et notre programme va donc planter !
+        Il faut donc agir au sein du while sur la condition pour qu'elle se modifie et passe après un certain nombre
+        de cycle à false. Un while ressemble donc souvent à ceci
+    </p>
+    <p>
+        while(condition):
+        <br>CodeSExecutantEnBoucle()
+        <br>ModificationDeLaCondition()
+    </p>
+    
+    <p><a href="../Chapitre4.html">Retour au Chapitre 4</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+</script>
+</html>

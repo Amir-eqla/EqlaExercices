@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 6 : Somme d'âges</h2>
+    <p>
+        Créez une fonction qui va avoir 2 paramètre. Ces deux paramètres sont des chiffres
+        représentant l'âge de deux personnes. Cette fonction écrira une petite phrase du style 
+        "l'age de la personne 1 est... l'âge de la personne deux est ..."
+    </p>
+    <p>
+        la deuxième utilité de cette fonction est de calculer la somme de ces âges. La fonction
+        renverra le résultat au programme principal qui lui devra afficher une phrase du style
+        "la somme des deux âges vaut ..."
+    </p>
+    
+    <p><a href="../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+function SayAges(_age1,_age2)
+{
+    alert("la première personne à "+_age1+" ans et la deuxième personne à "+_age2+" ans");
+    let result = _age1+_age2;
+    return result;
+}
+let age1 = 25;
+let age2 = 35;
+result = SayAges (age1,age2);
+alert("la somme des deux ages est "+result);
+
+</script>
+</html>

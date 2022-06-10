@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 7 : Super Calculette</h2>
+    <p>
+        Ecrivez un programme qui fera office de super calculette ! Le programme demande de rentrer 2 
+        chiffres à l'utilisateur, une fois ceux-ci entré, le programme donne le résultat de l'addition,
+        la multiplication, la soustraction, la division et le résultat de chacun des nombres mis au carré.
+        Chacune des opérations citées doivent se trouver dans une fonction différente.
+    </p>
+    
+    <p><a href="../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../Index.html">Retour à la séléction du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+function Addition(_number1,_number2)
+{
+    alert(_number1+_number2);
+    let resultad = _number1+_number2;
+    return resultad;
+}
+let number1 = parseInt(prompt("Choisissez un premier chiffre"));
+let number2 = parseInt(prompt("Choisissez un deuxième chiffre"));
+resultad = Addition(number1,number2);
+alert(resultad*resultad);
+
+function Soustraction(_number1,_number2)
+{
+    alert(_number1-_number2);
+    let resultsous = _number1-_number2;
+    return resultsous;
+}
+resultsous = Soustraction(number1,number2);
+alert(resultsous*resultsous);
+
+function Multiplication(_number1,_number2)
+{
+    alert(_number1*_number2);
+    let resultmul = _number1*_number2;
+    return resultmul;
+}
+resultmul = Multiplication(number1,number2);
+alert(resultmul*resultmul);
+
+function Division(_number1,_number2)
+{
+    alert(_number1/_number2);
+    let resultdiv = _number1/_number2;
+    return resultdiv
+}
+resultdiv = Division(number1,number2);
+alert(resultmul*resultmul);
+
+
+</script>
+</html>
